@@ -1,0 +1,28 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation gradleApi()
+    implementation 'com.android.tools.build:gradle:3.5.0-rc01'
+}
