@@ -1,4 +1,4 @@
-package com.kwunai.ams.annotations;
+package com.kwunai.asm.annotation;
 
 
 import java.lang.annotation.ElementType;

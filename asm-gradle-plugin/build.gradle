@@ -1,5 +1,4 @@
 apply plugin: 'groovy'
-apply plugin: 'java'
 
 sourceSets {
     main {
@@ -7,9 +6,6 @@ sourceSets {
             srcDir 'src/main/groovy'
         }
 
-        java {
-            srcDir 'src/main/java'
-        }
         resources {
             srcDir 'src/main/resources'
         }
@@ -24,5 +20,15 @@ repositories {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation gradleApi()
+    implementation localGroovy()
+    implementation 'org.ow2.asm:asm:6.0'
+    implementation 'org.ow2.asm:asm-commons:6.0'
     implementation 'com.android.tools.build:gradle:3.5.0-rc01'
+    implementation 'com.kwunai.asm:asm-annotation:1.0'
 }
+
+version 1.0
+group "com.kwunai.asm"
+
+apply from: rootProject.file("${rootDir}/gradle/java-publish.gradle")
+

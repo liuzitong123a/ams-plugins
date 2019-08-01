@@ -1,2 +1,2 @@
-include ':app', ':buildSrc'
-rootProject.name = 'ASMPlugin'
+include ':app', ':asm-gradle-plugin', ':asm-annotation'
+

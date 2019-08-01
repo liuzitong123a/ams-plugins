@@ -1,4 +1,4 @@
-package com.kwunai.ams
+package com.kwunai.asm
 
 import org.apache.commons.compress.utils.IOUtils
 import org.objectweb.asm.ClassReader

@@ -1,4 +1,4 @@
-package com.kwunai.ams
+package com.kwunai.asm
 
 import org.objectweb.asm.ClassVisitor
 import org.objectweb.asm.MethodVisitor

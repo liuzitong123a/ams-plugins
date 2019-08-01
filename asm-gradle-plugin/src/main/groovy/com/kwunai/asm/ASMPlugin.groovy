@@ -1,4 +1,4 @@
-package com.kwunai.ams
+package com.kwunai.asm
 
 import com.android.build.gradle.AppExtension
 import org.gradle.api.Plugin
